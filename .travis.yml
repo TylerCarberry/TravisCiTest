@@ -1,2 +1,2 @@
 language: java
-script: gradle src/SampleTest --debug-jvm
+script: gradle test
