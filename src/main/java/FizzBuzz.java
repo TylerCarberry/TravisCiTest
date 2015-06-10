@@ -2,34 +2,24 @@
 public class FizzBuzz {
 
 	public static void main(String[] args) {
-	
-		String fizzBuzz = getFizzBuzz(100);
-		System.out.println(fizzBuzz);
-			
-		for(int i = 1; i <= 100; i++) {
-			if(i % 15 == 0)
-				System.out.println("FizzBuzz");
-			else if(i % 3 == 0)
-				System.out.println("Fizz");
-			else if(i % 5 == 0)
-				System.out.println("Buzz");
-			else
-				System.out.println(i);
-		}
+		System.out.println(getFizzBuzzRange(1, 100));
 	}
 	
-	public static String getFizzBuzz(int max) {
+	public static String getFizzBuzzRange(int min, int max) {
 		String result = "";
-		for(int i = 1; i <= max; i++) {
-			if(i % 15 == 0)
-				result += "FizzBuzz\n";
-			else if(i % 3 == 0)
-				result += "Fizz\n";
-			else if(i % 5 == 0)
-				result += "Buzz\n";
-			else
-				result += i + "\n";
-		}
+		for(int i = min; i <= max; i++)
+			result += getFizzBuzz(i) + "\n";
 		return result;
+	}
+	
+	public static String getFizzBuzz(int num) {
+		if(num % 15 == 0)
+			return "FizzBuzz";
+		else if(num % 3 == 0)
+			return "Fizz";
+		else if(num % 5 == 0)
+			return "Buzz";
+		else
+			return ""+num;
 	}
 }
