@@ -9,7 +9,7 @@ public class SampleTest {
 	}
 	
 	@Test public void causeException() {
-		//FizzBuzz.causeRuntimeException();
+		FizzBuzz.causeRuntimeException();
 	}
 	
 	@Test public void isZero() {
@@ -18,7 +18,7 @@ public class SampleTest {
 	
 	
 	@Test public void alwaysFails() {
-		boolean b = true;
+		boolean b = false;
 		assertTrue(b);
 	}
 
