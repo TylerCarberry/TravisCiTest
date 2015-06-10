@@ -7,7 +7,7 @@ repositories {
 dependencies {
 	testCompile 'junit:junit:[4,)'
 }
- 
-task testGroupOne(type: Test) {
-   include '**/SampleTest.class'
+
+test {
+    include '**/SampleTest.class'
 }
