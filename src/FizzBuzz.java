@@ -14,7 +14,9 @@ public class FizzBuzz {
 				System.out.println(i);
 		}
 		
-		System.out.println("This code should have ran without any errors");
+		causeRuntimeException();
+		
+		//System.out.println("This code should have ran without any errors");
 	}
 	
 	public static void causeRuntimeException() {
