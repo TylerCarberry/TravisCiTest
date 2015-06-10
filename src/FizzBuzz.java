@@ -22,5 +22,9 @@ public class FizzBuzz {
 	public static void causeRuntimeException() {
 		int num = 1/0;
 	}
+	
+	public static int getZero() {
+		return 0;
+	}
 
 }

@@ -1,1 +1,12 @@
 apply plugin: 'java'
+
+dependencies {
+	testCompile 'junit:junit:[4,)'
+}
+ 
+test {
+	testLogging {
+		// Show that tests are run in the command-line output
+		events 'started', 'passed'
+	}
+}
