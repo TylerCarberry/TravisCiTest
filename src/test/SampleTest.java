@@ -16,6 +16,13 @@ public class SampleTest {
 		assertEquals(FizzBuzz.getZero(), 0);
 	}
 	
+	@Test public void alwaysFails() {
+		boolean b = false;
+		assertTrue(b);
+	}
+	
+	
+	
 	
 
 }
