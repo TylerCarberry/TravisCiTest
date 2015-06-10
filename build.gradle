@@ -5,9 +5,5 @@ repositories {
 }
 
 dependencies {
-	testCompile 'junit:junit:[4,)'
-}
-
-test {
-    include '**/SampleTest.class'
+	testCompile 'junit:junit:4.11'
 }
